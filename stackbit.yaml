@@ -19,4 +19,4 @@ dataDir: null
 pagesDir: content
 
 # CMS type
-cmsName: netlify
+cmsName: netlifycms
