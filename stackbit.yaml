@@ -1,0 +1,22 @@
+stackbitVersion: ~0.3.0
+
+# Use node version 14
+nodeVersion: 14
+
+# The name of the static-site-generator
+ssgName: gatsby
+
+# builder
+buildCommand: gatsby build
+
+# publish
+publishDir: public
+
+# The site has no data files (json, yaml, .etc)
+dataDir: null
+
+# The folder with markdown files representing your site pages
+pagesDir: content
+
+# CMS type
+cmsName: netlify
