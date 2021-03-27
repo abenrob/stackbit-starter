@@ -18,5 +18,85 @@ dataDir: null
 # The folder with markdown files representing your site pages
 pagesDir: content
 
-# CMS type
-cmsName: netlifycms
+# assets
+assets:
+  referenceType: static
+  staticDir: static/media
+  publicPath: /media
+
+# models
+models:
+  pages:
+    type: page
+    label: Pages
+    folder: pages
+    match: 
+      - "**/*"
+    urlPath: "{slug}"
+    fields:
+      - type: string
+        name: template
+        label: Template
+        hidden: true
+        default: page
+      - type: string
+        name: title
+        label: Title
+        required: true
+      - type: slug
+        name: slug
+        label: Slug
+      - type: image
+        name: socialImage
+        label: "Social Image"
+      - type: boolean
+        name: draft
+        label: Draft
+        default: true
+      - type: markdown
+        name: body
+        label: Body
+  posts:
+    type: page
+    label: Posts
+    folder: posts
+    match: 
+      - "**/*"
+    urlPath: "posts/{slug}"
+    fields:
+      - type: string
+        name: template
+        label: Template
+        hidden: true
+        default: post
+      - type: string
+        name: title
+        label: Title
+        required: true
+      - type: slug
+        name: slug
+        label: Slug
+      - type: image
+        name: socialImage
+        label: "Social Image"
+      - type: boolean
+        name: draft
+        label: Draft
+        default: true
+      - type: datetime
+        name: date
+        label: "Publish Date"
+      - type: text
+        name: description
+        label: Description
+      - type: string
+        name: category
+        label: Category
+      - type: markdown
+        name: body
+        label: Body
+      - type: list
+        name: tags
+        label: Tags
+        items:
+          type: string
