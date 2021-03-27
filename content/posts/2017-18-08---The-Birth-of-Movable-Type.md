@@ -1,5 +1,5 @@
 ---
-title: 'Johannes Gutenberg: The Birth of Movable Type'
+title: 'Johannes Gutenberg: The Printing Press Guy!'
 date: '2017-09-19T00:12'
 template: post
 draft: false
