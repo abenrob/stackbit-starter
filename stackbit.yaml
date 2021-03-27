@@ -30,9 +30,8 @@ models:
     type: page
     label: Pages
     folder: pages
-    match: 
-      - "**/*"
-    urlPath: "{slug}"
+    urlPath: /{slug}
+    filePath: /{slug}.md
     fields:
       - type: string
         name: template
@@ -48,7 +47,7 @@ models:
         label: Slug
       - type: image
         name: socialImage
-        label: "Social Image"
+        label: Social Image
       - type: boolean
         name: draft
         label: Draft
@@ -60,9 +59,8 @@ models:
     type: page
     label: Posts
     folder: posts
-    match: 
-      - "**/*"
-    urlPath: "posts/{slug}"
+    urlPath: posts/{slug}
+    filePath: posts/{slug}.md
     fields:
       - type: string
         name: template
@@ -78,14 +76,14 @@ models:
         label: Slug
       - type: image
         name: socialImage
-        label: "Social Image"
+        label: Social Image
       - type: boolean
         name: draft
         label: Draft
         default: true
       - type: datetime
         name: date
-        label: "Publish Date"
+        label: Publish Date
       - type: text
         name: description
         label: Description
