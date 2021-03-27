@@ -127,6 +127,30 @@ models:
           - type: string
             name: instagram
             label: instagram
+          - type: string
+            name: vkontakte
+            label: vkontakte
+          - type: string
+            name: line
+            label: line
+          - type: string
+            name: gitlab
+            label: gitlab
+          - type: string
+            name: weibo
+            label: weibo
+          - type: string
+            name: codepen
+            label: codepen
+          - type: string
+            name: youtube
+            label: youtube
+          - type: string
+            name: soundcloud
+            label: soundcloud
+          - type: string
+            name: medium
+            label: medium
   page:
     type: page
     label: Pages
