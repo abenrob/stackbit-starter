@@ -35,6 +35,8 @@ models:
     type: page
     label: Pages
     folder: pages
+    urlPath: /{slug}
+    filePath: /{slug}.md
     fields:
       - type: string
         name: template
@@ -56,6 +58,8 @@ models:
     type: page
     label: Posts
     folder: posts
+    urlPath: posts/{slug}
+    filePath: posts/{slug}.md
     fields:
       - type: string
         name: template
