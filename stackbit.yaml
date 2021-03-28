@@ -44,9 +44,6 @@ models:
         name: title
         label: Title
         required: true
-      - type: slug
-        name: slug
-        label: Slug
       - type: image
         name: socialImage
         label: Social Image
