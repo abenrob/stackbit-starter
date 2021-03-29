@@ -12,13 +12,14 @@ buildCommand: gatsby build
 # publish
 publishDir: public
 
-# dataDir: data
-dataDir: null
+dataDir: data
 
 # The folder with markdown files representing your site pages
 pagesDir: content
 
 logicFields:
+  - slug
+  - socialImage
   - post.category
   - post.tags
   - post.date
@@ -35,14 +36,14 @@ models:
     type: page
     label: Pages
     folder: pages
-    urlPath: /{slug}
-    filePath: /{slug}.md
+    urlPath: pages/{slug}
+    filePath: pages/{slug}.md
     fields:
       - type: string
         name: template
         label: Template
         hidden: true
-        default: page
+        const: page
       - type: string
         name: title
         label: Title
@@ -65,7 +66,7 @@ models:
         name: template
         label: Template
         hidden: true
-        default: post
+        const: post
       - type: string
         name: title
         label: Title
